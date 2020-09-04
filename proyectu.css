@@ -1,0 +1,536 @@
+
+
+  <style>
+
+      body {
+         padding:0;
+         margin:0;
+         background:; 
+        
+    
+      }
+
+  :root {
+  --cucu :yellow;
+  --cos:red;
+  --tan:linear-gradient(to left, crimson,red, crimson);
+  }
+
+  .tubody   {
+  position: relative;
+  width: 100%;
+  height: 87vh;
+  background:crimson;
+  overflow: hidden;
+
+
+  }
+
+      .contenlo{
+          position: relative;
+          
+          width: 100vw;
+          height: 55vh;
+          
+          
+          background:; 
+
+
+  }
+
+
+
+   .contenedor-uno , .contenedorbur  {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background:var(--cos); 
+           
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+
+  }
+
+
+  .contenedorbur {
+
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%, 100% 50%);
+
+  }
+
+
+
+      .contenedor-dos{
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          filter: contrast(20); 
+          
+         
+
+  }
+
+   .contenedormu{
+          position: absolute;
+          width: 100%;
+          height: 100%;
+         
+          
+         
+
+  }
+
+
+
+      .contenedor-dos:before{
+        content: "";
+          position:absolute;
+          top:0%;
+          left:0%;
+          width: 100%;
+          height: 100%;
+          background:rgb(0,0,250,0.2);
+            
+
+
+  }
+
+
+   .pompa1{
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:var(--cucu);
+  filter: blur(12px);
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+
+  }
+
+
+   .pompa12{
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:var(--cucu);
+  filter: blur(12px);
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+
+  }
+
+
+
+   .pompatu{
+
+  position: absolute;
+  width: 80%;
+  left:20%;
+  height: 100%;
+  background:url("file:///C|/Users/bryan/Pictures/mercurio/rojo3.png"); 
+
+
+
+
+  }
+
+   .pompa2{
+
+  position: absolute;
+  width: 5vw;
+  height: 5vw;
+  background: #E63844;
+  filter: blur(12px);
+  top:35%; 
+  border-radius: 20vw;
+  animation: mover 5s infinite ;
+  }
+
+  @keyframes mover {
+
+    0% {left:10%;}
+    100% {left:70%;}
+   
+  }
+
+
+  .conte {
+  position: absolute;
+  width: 100%;
+  height: 96%;
+  background:url("file:///C|/Users/bryan/Pictures/mercurio/pizza5.png"); 
+  background-size:cover; 
+   
+  }
+
+
+  .conte:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+   background: rgb(255,0,0,0.1); 
+
+
+  }
+
+
+
+
+  .menu {
+  position: sticky;
+  top:0%;
+  width: 100%;
+  height: 5.85vw;
+
+  background:var(--tan);
+  opacity: ; 
+  display: flex;justify-content: center;
+  align-items: center;
+  border-bottom: 0vw solid #F58000;
+  z-index: 20000;
+  }
+
+
+  .consu {
+  position: relative;
+  width: 100%;
+  height: 1vw;
+
+  background:white; 
+  z-index: 1000;
+
+  }
+
+  .tab  {
+    position: relative;
+  margin-left:3.5vw;
+  font-size: 3.5vw;
+  font-family: Gabriola;
+  color:white;
+  text-shadow: 0px 0px 10px gold;
+
+  }
+
+
+  .tabi  {
+    position: relative;
+    display: block;
+  left:0vw;
+  font-size: 4vw;
+  font-family: Gabriola;
+  color:black;
+  padding:0%; 
+  margin:0%;
+  text-shadow: 0px 0px 7px gold;
+  }
+
+  .stefa  {
+  position: relative;
+  color:white;
+
+  }
+
+  .rubi {
+  position: relative;
+  width: 100%;
+  height: 32.5vh;
+  display:flex;
+  justify-content: flex-end;
+  }
+
+
+      .tesoro{
+          position: relative;
+          
+          width:35vw;
+          height: 100%;
+          background:var(--cos); 
+
+
+  }
+
+
+      .tesorodos{
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          filter: contrast(20); 
+
+
+  }
+
+
+
+      .tesorodos:before{
+        content: "";
+          position:absolute;
+          top:0%;
+          left:0%;
+          width: 100%;
+          height: 100%;
+          background:rgb(0,0,250,0.2);  
+
+
+  }
+
+
+   .buruno{
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--cucu);
+  filter: blur(12px);
+
+  }
+
+
+
+      .caja{
+          position: relative;
+          width: 35%;
+          height:100%;
+          background:var(--cos); 
+
+
+  }
+
+
+      .cajados{
+          position: relative;
+          width: 100%;
+          height: 100%;
+          filter: contrast(20); 
+
+
+  }
+
+
+
+      .cajados:before{
+        content: "";
+          position:absolute;
+          top:0%;
+          left:0%;
+          width: 100%;
+          height: 100%;
+          background:rgb(0,0,250,0.2);  
+
+
+  }
+
+
+   .burdos{
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:var(--cucu);
+  filter: blur(12px);
+   
+
+  }
+
+
+
+
+
+      .linea{
+          position: relative;
+          width: 30%;
+          height: 100%;
+          background:var(--cos); 
+
+
+  }
+
+
+      .lineados{
+          position: relative;
+          width: 100%;
+          height: 100%;
+          filter: contrast(20); 
+
+
+  }
+
+
+
+      .lineados:before{
+        content: "";
+          position:absolute;
+          top:0%;
+          left:0%;
+          width: 100%;
+          height: 100%;
+          background:rgb(0,0,250,0.3);  
+
+
+  }
+
+
+   .liquido{
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:yellow;
+  filter: blur(12px);
+   
+
+  }
+
+  .liquido:after{
+        content: " ";
+          position:absolute;
+         width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          font-family: Segoe UI Symbol;
+          
+          background:;   
+          color:white;
+          z-index: 3000;
+  }
+
+  .contetodo {
+  position: absolute;
+  top:0%;
+  width: 99%;
+  height: 96%;
+  background:url("file:///C|/Users/bryan/Pictures/mercurio/pizza8.png"); 
+  background-size:cover; 
+
+
+  }
+
+  .contetodo:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:  rgb(255,0,0,0.1); 
+
+
+  }
+
+
+
+
+
+  .contetodos {
+  position: absolute;
+  top:0%;
+  width: 99%;
+  height: 96%;
+  background:url("file:///C|/Users/bryan/Pictures/mercurio/pizza3.png"); 
+  background-size:cover; 
+
+
+  }
+
+  .contetodos:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+   background: rgb(255,0,0,0.1);
+
+
+  }
+
+
+
+
+
+
+  .pizza {
+    position: relative;
+  width: 100%;
+  height: 100% ;
+  background: ;
+  z-index: 2000;
+  font-family:  Segoe UI Symbol;
+  color:white;
+  left:0%;
+  bottom:0px;
+  overflow: hidden;
+  }
+
+
+  .pizza .la {
+    position: absolute;
+  left:2vw;
+  top: 3vh;
+  margin:0%; 
+  font-size: 3vw;
+  padding: 0vw 1.5vw 0vw 1.5vw;
+  background:crimson;
+  box-shadow: 0px 0px 0px 3px gold;
+  border-radius:50vw;
+  text-shadow: 0px 0px 10px gold;
+  }
+
+  .eat   {
+    position: absolute;
+    
+  z-index: 4000;
+  width: 100%;
+  background: linear-gradient(120deg,crimson,rgb(255,0,0,0.2),crimson);
+  height: 20%;
+  bottom: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 5px 2px gold;
+
+
+  }
+
+
+  .eat i  {
+
+  padding: 1vw;
+  margin:2vw;
+  margin-left:3vw;
+  font-size: 2vw;
+  color:crimson;
+  background:white; 
+  box-shadow: 0px 0px 0px 2.5px gold;
+  border-radius:50%; 
+  text-shadow: 0px 0px 10px white;
+  }
+
+  .clase {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Gabriola;
+  font-size:12vw;
+  color:crimson;
+
+
+  }
+
+  .clase p {
+  text-shadow: 0px 0px 5px white ;
+
+
+
+  }
+
+
+
+</style>
