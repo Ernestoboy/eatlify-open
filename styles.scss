@@ -1,0 +1,22 @@
+$color-primario: #f8982c;
+$color-secundarop: yellow;
+
+$degradado: linear-gradient(
+  135deg,
+  rgb(250, 199, 17) 10%,
+  rgb(245, 85, 85) 100%
+);
+$sombra: 1px 2px 6px rgba(34, 34, 34, 0.575);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import 'menu';
+
+.columna{
+    background-image: $degradado;
+}

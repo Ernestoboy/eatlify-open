@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.menu {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0%;
+  height: 5.85vw;
+  background: #f8982c;
+  background-image: linear-gradient(135deg, #fac711 10%, #f55555 100%);
+  /* background-image: linear-gradient( 135deg, #FEC163 10%, #DE4313 100%); */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 0vw solid #f58000;
+  padding: 0 3%;
+  z-index: 20000;
+  -webkit-box-shadow: 1px 2px 6px rgba(34, 34, 34, 0.575);
+          box-shadow: 1px 2px 6px rgba(34, 34, 34, 0.575);
+}
+
+.menu .tab {
+  position: relative;
+  margin-left: 3.5vw;
+  font-size: 3.5vw;
+  font-family: Gabriola;
+  color: white;
+  text-shadow: 0px 0px 10px gold;
+}
+
+.menu .space {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.menu .tabi {
+  position: relative;
+  display: block;
+  left: 0vw;
+  font-size: 5vw;
+  font-family: Gabriola;
+  color: white;
+  padding: 0%;
+  margin: 0%;
+  text-shadow: 0px 0px 7px #d6b709;
+}
+
+.menu .tabi .cada-letra {
+  display: inline;
+}
+
+.columna {
+  background-image: linear-gradient(135deg, #fac711 10%, #f55555 100%);
+}
+/*# sourceMappingURL=styles.css.map */
