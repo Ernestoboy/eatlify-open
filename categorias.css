@@ -1,314 +1,342 @@
-
-
 body {
-   padding:0;
-   margin:0;
-   background:;
+  padding: 0;
+  margin: 0;
+  background: ;
 }
 
-
-:root   {
---sha:gold;
---back:orange;
---cate:url("file:///C|/Users/bryan/Pictures/mercurio/pizza11.png");background-size:cover;
---reto:0%;
+:root {
+  --sha: gold;
+  --back: orange;
+  --cate: url("file:///C|/Users/bryan/Pictures/mercurio/pizza11.png");
+  background-size: cover;
+  --reto: 0%;
 }
 
-    .observatorio{
-position: relative;
-width: 24.9%;
-height: 10%;
-box-shadow: 0px 0px 3px 2px var(--sha) ;
-margin-bottom: 0vw; 
-
-
+.observatorio {
+  position: relative;
+  width: 24.9%;
+  height: 10%;
+  box-shadow: 0px 0px 3px 2px var(--sha);
+  margin-bottom: 0vw;
 }
 
-
-
- .info-categorias{
-position: fixed;
-width: 24.9%;
-height: 100%;
-top:0%;
-border-left: 0px solid var(--sha);
-box-shadow: 0px 0px 1px 7px black ;
-background: rgb(50,50,50,1);
-text-align: center;
-z-index: 2; 
-
-
-
-
+.info-categorias {
+  position: fixed;
+  width: 24.9%;
+  height: 100%;
+  top: 0%;
+  border-left: 0px solid var(--sha);
+  box-shadow: 0px 0px 1px 7px black;
+  background: rgb(50, 50, 50, 1);
+  text-align: center;
+  z-index: 2;
 }
 
-
-.info-cate  {
-position: relative;
-top:-4%;
-left:4.4vw;
-width: 15vw;
-height: 15vw;
-border-radius: 50%;
-background:var(--cate); 
-background-size: cover;
-border:4px solid var(--back); 
- box-shadow: 0px 0px 0px 5px gold  ;
- display: flex;
- justify-content: center;
-
+.info-cate {
+  position: relative;
+  top: -4%;
+  left: 4.4vw;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  background: var(--cate);
+  background-size: cover;
+  border: 4px solid var(--back);
+  box-shadow: 0px 0px 0px 5px gold;
+  display: flex;
+  justify-content: center;
 }
-
-
-
 
 .categorias {
-position:sticky;
-top:0vw;
-width: 74.5%;
-height: 22%;
-left: 25.5%;
-background: rgb(50,50,50,1); 
-border-top:3px solid rgb(50,50,50,1);
-padding-top:0.5vw ;
-border-bottom: 5px solid var(--back);
-box-shadow: 0px 0px 5px 5px black ;
-overflow: hidden;
-z-index: 500;
-
+  position: sticky;
+  top: 0vw;
+  width: 74.5%;
+  height: 22%;
+  left: 25.5%;
+  background: rgb(50, 50, 50, 1);
+  border-top: 3px solid rgb(50, 50, 50, 1);
+  padding-top: 0.5vw;
+  border-bottom: 5px solid var(--back);
+  box-shadow: 0px 0px 5px 5px black;
+  overflow: hidden;
+  z-index: 500;
 }
 
-.over-categorias  {
-position: absolute;
-width: auto;
-height: 80%;
-background:; 
-display: flex;
-left:var(--reto);
-transition: 3s all ease;
+.over-categorias {
+  /* position: absolute; */
+  width: auto;
+  height: 300%;
+  position: relative;
+  display: flex;
+  left: var(--reto);
+  transition: 3s all ease;
 
+  display: grid;
+  grid-auto-flow: column;
+  gap: 6px;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
+.over-categorias .item {
+  position: relative;
+  width: 9vw;
+  height: 9vw;
+  margin: 0vw 2vw 0vw 2vw;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  border: 4px solid var(--back);
+  box-shadow: 0px 0px 0px 5px gold;
 }
 
 @keyframes mover {
-
-  0% {left:0%;}
-   10% {left:0%;}
-  25% {left:-20%;}
-  40% {left:-20%;}
-  70% {left:-120%;}
-   100% {left:-0%;}
- 
-}
-  
-
-
-
-
-
-
-
-.item1 , .item2 , .item3 , .item4 , .item5 , .item6 , .item7 , .item8 , .item9 , .item2   {
-position: relative;
-width: 9vw;
-height: 9vw;
-margin:0vw 2vw 0vw 2vw; 
-border-radius: 50%; 
-display: flex;
-justify-content: center;
-border:4px solid var(--back); 
- box-shadow: 0px 0px 0px 5px gold ;
-
+  0% {
+    left: 0%;
+  }
+  10% {
+    left: 0%;
+  }
+  25% {
+    left: -20%;
+  }
+  40% {
+    left: -20%;
+  }
+  70% {
+    left: -120%;
+  }
+  100% {
+    left: -0%;
+  }
 }
 
-.over-categorias p , .info-cate p   {
-position: relative;
-top: 70%;
-color:white;
-background:radial-gradient(gold,orange);
-border-left:2px solid var(--back);
-border-right:2px solid var(--back);
-padding-left:1.3vw;
-padding-right: 1.3vw; 
-padding-top: 1.2vw;
-border-radius: 20vw;
-box-shadow: 0px 0px 1px 3px gold inset;
-font-weight: 1000;
+.over-categorias p,
+.info-cate p {
+  position: relative;
+  top: 70%;
+  color: white;
+  background: radial-gradient(gold, orange);
+  border-left: 2px solid var(--back);
+  border-right: 2px solid var(--back);
+  padding-left: 1.3vw;
+  padding-right: 1.3vw;
+  padding-top: 1.2vw;
+  border-radius: 20vw;
+  box-shadow: 0px 0px 1px 3px gold inset;
+  font-weight: 1000;
 }
 
-.info-cate p  {
+.info-cate p {
   position: absolute;
-  top:85%;
-padding: 0vw 1.3vw 0vw 1.3vw ;
-background:orange; 
-box-shadow: 0px 0px 10px 4px gold inset;
-height: 3vw;
-display: flex;
-justify-content: center;
-align-items: center;
-color:white;
- font-family:  Segoe UI Symbol;
+  top: 85%;
+  padding: 0vw 1.3vw 0vw 1.3vw;
+  background: orange;
+  box-shadow: 0px 0px 10px 4px gold inset;
+  height: 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: Segoe UI Symbol;
 }
 
-
-.info   {
-position: relative;
-top:1.5%;
-width: 94%;
-left: 3%;
-border-radius: 5vw;
-height:auto;
-padding:1vw 0vw 1.5vw 0vw; 
-display: flex;
-justify-content: center;
-align-items: center;
- background:orange; 
- border:2px solid orange; 
-box-shadow: 0px 0px 50px 20px gold inset;
-z-index: -1;
-
+.info {
+  position: relative;
+  top: 1.5%;
+  width: 94%;
+  left: 3%;
+  border-radius: 5vw;
+  height: auto;
+  padding: 1vw 0vw 1.5vw 0vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: orange;
+  border: 2px solid orange;
+  box-shadow: 0px 0px 50px 20px gold inset;
+  z-index: -1;
 }
 
-.info p   {
-position: relative;
-background:;
-width: 90%;
- font-family:  Segoe UI Symbol;
- font-size: 1.3vw;
- color:white;
- font-weight: 1000;
-
+.info p {
+  position: relative;
+  background: ;
+  width: 90%;
+  font-family: Segoe UI Symbol;
+  font-size: 1.3vw;
+  color: white;
+  font-weight: 1000;
 }
 
-
-.eatlify  {
-position: relative;
- font-family: Gabriola;
- top:-2%;
- background:; 
- font-size:5vw;
- padding:0px;
- margin:0px;
- color:orange;
-
-
+.eatlify {
+  position: relative;
+  font-family: Gabriola;
+  top: -2%;
+  background: ;
+  font-size: 5vw;
+  padding: 0px;
+  margin: 0px;
+  color: orange;
 }
 
-.item1  {background: url("file:///C|/Users/bryan/Pictures/mercurio/pizza3.png");background-size:cover; }
-.item2  {background: url("file:///C|/Users/bryan/Pictures/mercurio/pizza4.png");background-size:cover; }
-.item3  {background: url("file:///C|/Users/bryan/Pictures/mercurio/pizza11.png");background-size:cover; }
-.item4  {background: url("file:///C|/Users/bryan/Pictures/mercurio/pizza12.png");background-size:cover; }
-.item5  {background: url("file:///C|/Users/bryan/Pictures/mercurio/pizza5.png");background-size:cover; }
-.item6  {background: url("file:///C|/Users/bryan/Pictures/mercurio/ham1.png");background-size:cover; }
-.item7  {background: url("file:///C|/Users/bryan/Pictures/mercurio/ham2.png");background-size:cover; }
-.item8  {background: url("file:///C|/Users/bryan/Pictures/mercurio/ham3.png");background-size:cover; }
-
-
-.conte-card   {
-position: relative;
-width: 75%;
-height:auto;
-background:#f1f1f2; 
-left:25%;
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-align-items: center;
-padding-bottom:3vw; 
-
-
+.item1 {
+  background: url("file:///C|/Users/bryan/Pictures/mercurio/pizza3.png");
+  background-size: cover;
+}
+.item2 {
+  background: url("file:///C|/Users/bryan/Pictures/mercurio/pizza4.png");
+  background-size: cover;
+}
+.item3 {
+  background: url("file:///C|/Users/bryan/Pictures/mercurio/pizza11.png");
+  background-size: cover;
+}
+.item4 {
+  background: url("file:///C|/Users/bryan/Pictures/mercurio/pizza12.png");
+  background-size: cover;
+}
+.item5 {
+  background: url("file:///C|/Users/bryan/Pictures/mercurio/pizza5.png");
+  background-size: cover;
+}
+.item6 {
+  background: url("file:///C|/Users/bryan/Pictures/mercurio/ham1.png");
+  background-size: cover;
+}
+.item7 {
+  background: url("file:///C|/Users/bryan/Pictures/mercurio/ham2.png");
+  background-size: cover;
+}
+.item8 {
+  background: url("file:///C|/Users/bryan/Pictures/mercurio/ham3.png");
+  background-size: cover;
 }
 
-.card   {
-position: relative;
-background:white;
-width: 20vw;
-height: 40vh; 
-margin:4vw 0vw 0vw 3vw;
+.conte-card {
+  position: relative;
+  width: 75%;
+  height: auto;
+  background: #f1f1f2;
+  left: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3vw;
+}
 
-border-top-left-radius: 2vw;
-border-top-right-radius: 2vw;
-border-bottom-left-radius: 2vw;
-border-bottom-right-radius: 2vw;
-border:5px solid  rgb(55,55,55,1);
-box-shadow: 0px 0px 1px 4px white inset;  
-overflow: hidden;
+.card {
+  position: relative;
+  background: white;
+  width: 20vw;
+  height: 40vh;
+  margin: 4vw 0vw 0vw 3vw;
 
+  border-top-left-radius: 2vw;
+  border-top-right-radius: 2vw;
+  border-bottom-left-radius: 2vw;
+  border-bottom-right-radius: 2vw;
+  border: 5px solid rgb(55, 55, 55, 1);
+  box-shadow: 0px 0px 1px 4px white inset;
+  overflow: hidden;
 }
 
 .card:hover {
-
-border:5px solid white; 
-
+  border: 5px solid white;
 }
 
- .infocard {
-position:absolute;
-top:95%;
-display: flex;
-
-
+.infocard {
+  position: absolute;
+  top: 95%;
+  display: flex;
 }
 
 .card p {
-position: relative;
-padding:0.5vw; 
-border-radius: 20vw;
-color:white;
-background:orange; 
-box-shadow: 0px 0px 10px 4px gold inset;
-font-family:  Segoe UI Symbol;
- font-size: 1.3vw;
- color:white;
- font-weight: 1000;
- border:1px solid gold; 
+  position: relative;
+  padding: 0.5vw;
+  border-radius: 20vw;
+  color: white;
+  background: orange;
+  box-shadow: 0px 0px 10px 4px gold inset;
+  font-family: Segoe UI Symbol;
+  font-size: 1.3vw;
+  color: white;
+  font-weight: 1000;
+  border: 1px solid gold;
 }
 
+.img-cate1,
+.img-cate2,
+.img-cate3,
+.img-cate4,
+.img-cate5,
+.img-cate6,
+.img-cate7,
+.img-cate8,
+.img-cate9,
+.img-cate10,
+.img-cate11 {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
 
- .img-cate1 , .img-cate2 , .img-cate3 , .img-cate4 , .img-cate5 , .img-cate6 , .img-cate7 , .img-cate8 
- , .img-cate9 , .img-cate10 , .img-cate11{
-position: relative;
-width: 100%;
-height: 80%; 
-display: flex;
-justify-content: center;
-
-border-top-left-radius: 0vw;
-border-top-right-radius: 0vw;
+  border-top-left-radius: 0vw;
+  border-top-right-radius: 0vw;
 }
 
+.img-cate1 {
+  background: url("file:///C|/Users/bryan/Pictures/mercurio/ham1.png");
+  background-size: cover;
+}
 
+.img-cate2 {
+  background: url("file:///C|/Users/bryan/Pictures/mercurio/pizza11.png");
+  background-size: cover;
+}
 
-.img-cate1  {background: url("file:///C|/Users/bryan/Pictures/mercurio/ham1.png");
-background-size:cover;}
+.img-cate3 {
+  background: url("file:///C|/Users/bryan/Pictures/mercurio/pizza5.png");
+  background-size: cover;
+}
 
-.img-cate2  {background: url("file:///C|/Users/bryan/Pictures/mercurio/pizza11.png");
-background-size:cover;}
+.img-cate4 {
+  background: url("file:///C|/Users/bryan/Pictures/mercurio/pizza4.png");
+  background-size: cover;
+}
 
-.img-cate3  {background: url("file:///C|/Users/bryan/Pictures/mercurio/pizza5.png");
-background-size:cover;}
+.img-cate5 {
+  background: url("file:///C|/Users/bryan/Pictures/mercurio/ham3.png");
+  background-size: cover;
+}
 
-.img-cate4  {background: url("file:///C|/Users/bryan/Pictures/mercurio/pizza4.png");
-background-size:cover;}
+.img-cate6 {
+  background: url("file:///C|/Users/bryan/Pictures/mercurio/ham2.png");
+  background-size: cover;
+}
 
-.img-cate5  {background: url("file:///C|/Users/bryan/Pictures/mercurio/ham3.png");
-background-size:cover;}
+.img-cate7 {
+  background: url("file:///C|/Users/bryan/Pictures/mercurio/ham5.png");
+  background-size: cover;
+}
 
-.img-cate6  {background: url("file:///C|/Users/bryan/Pictures/mercurio/ham2.png");
-background-size:cover;}
+.img-cate8 {
+  background: url("file:///C|/Users/bryan/Pictures/mercurio/pizza17.png");
+  background-size: cover;
+}
 
-.img-cate7  {background: url("file:///C|/Users/bryan/Pictures/mercurio/ham5.png");
-background-size:cover;}
+.img-cate9 {
+  background: url("file:///C|/Users/bryan/Pictures/mercurio/pizza6.png");
+  background-size: cover;
+}
 
-.img-cate8  {background: url("file:///C|/Users/bryan/Pictures/mercurio/pizza17.png");
-background-size:cover;}
+.img-cate10 {
+  background: url("file:///C|/Users/bryan/Pictures/mercurio/pizza8.png");
+  background-size: cover;
+}
 
-.img-cate9  {background: url("file:///C|/Users/bryan/Pictures/mercurio/pizza6.png");
-background-size:cover;}
-
-.img-cate10 {background: url("file:///C|/Users/bryan/Pictures/mercurio/pizza8.png");
-background-size:cover;}
-
-.img-cate11 {background: url("file:///C|/Users/bryan/Pictures/mercurio/pizza10.png");
-background-size:cover;}
-
-
+.img-cate11 {
+  background: url("file:///C|/Users/bryan/Pictures/mercurio/pizza10.png");
+  background-size: cover;
+}
