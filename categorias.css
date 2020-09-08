@@ -1,7 +1,13 @@
 body {
   padding: 0;
   margin: 0;
-  background: ;
+
+}
+
+@media (max-width:650px){
+  body{
+    padding: 10px;
+  }
 }
 
 :root {
@@ -90,6 +96,27 @@ body {
   box-shadow: 0px 0px 0px 5px gold;
 }
 
+.over-categorias .flecha-izquierda{
+  color: white;
+  font-size: 2.5rem;
+  left: 6px;
+  position: absolute;
+  top: 14%;
+  background: rgba(17, 17, 17, 0.589);
+}
+
+
+.over-categorias .flecha-derecha{
+  color: white;
+  font-size: 2.5rem;
+  right: 6px;
+  position: absolute;
+  top: 14%;
+  background: rgba(17, 17, 17, 0.589);
+
+}
+
+
 @keyframes mover {
   0% {
     left: 0%;
@@ -172,44 +199,11 @@ body {
   position: relative;
   font-family: Gabriola;
   top: -2%;
-  background: ;
+
   font-size: 5vw;
   padding: 0px;
   margin: 0px;
   color: orange;
-}
-
-.item1 {
-  background: url("file:///C|/Users/bryan/Pictures/mercurio/pizza3.png");
-  background-size: cover;
-}
-.item2 {
-  background: url("file:///C|/Users/bryan/Pictures/mercurio/pizza4.png");
-  background-size: cover;
-}
-.item3 {
-  background: url("file:///C|/Users/bryan/Pictures/mercurio/pizza11.png");
-  background-size: cover;
-}
-.item4 {
-  background: url("file:///C|/Users/bryan/Pictures/mercurio/pizza12.png");
-  background-size: cover;
-}
-.item5 {
-  background: url("file:///C|/Users/bryan/Pictures/mercurio/pizza5.png");
-  background-size: cover;
-}
-.item6 {
-  background: url("file:///C|/Users/bryan/Pictures/mercurio/ham1.png");
-  background-size: cover;
-}
-.item7 {
-  background: url("file:///C|/Users/bryan/Pictures/mercurio/ham2.png");
-  background-size: cover;
-}
-.item8 {
-  background: url("file:///C|/Users/bryan/Pictures/mercurio/ham3.png");
-  background-size: cover;
 }
 
 .conte-card {
@@ -231,7 +225,6 @@ body {
   width: 20vw;
   height: 40vh;
   margin: 4vw 0vw 0vw 3vw;
-
   border-top-left-radius: 2vw;
   border-top-right-radius: 2vw;
   border-bottom-left-radius: 2vw;
@@ -286,57 +279,4 @@ body {
   border-top-right-radius: 0vw;
 }
 
-.img-cate1 {
-  background: url("file:///C|/Users/bryan/Pictures/mercurio/ham1.png");
-  background-size: cover;
-}
 
-.img-cate2 {
-  background: url("file:///C|/Users/bryan/Pictures/mercurio/pizza11.png");
-  background-size: cover;
-}
-
-.img-cate3 {
-  background: url("file:///C|/Users/bryan/Pictures/mercurio/pizza5.png");
-  background-size: cover;
-}
-
-.img-cate4 {
-  background: url("file:///C|/Users/bryan/Pictures/mercurio/pizza4.png");
-  background-size: cover;
-}
-
-.img-cate5 {
-  background: url("file:///C|/Users/bryan/Pictures/mercurio/ham3.png");
-  background-size: cover;
-}
-
-.img-cate6 {
-  background: url("file:///C|/Users/bryan/Pictures/mercurio/ham2.png");
-  background-size: cover;
-}
-
-.img-cate7 {
-  background: url("file:///C|/Users/bryan/Pictures/mercurio/ham5.png");
-  background-size: cover;
-}
-
-.img-cate8 {
-  background: url("file:///C|/Users/bryan/Pictures/mercurio/pizza17.png");
-  background-size: cover;
-}
-
-.img-cate9 {
-  background: url("file:///C|/Users/bryan/Pictures/mercurio/pizza6.png");
-  background-size: cover;
-}
-
-.img-cate10 {
-  background: url("file:///C|/Users/bryan/Pictures/mercurio/pizza8.png");
-  background-size: cover;
-}
-
-.img-cate11 {
-  background: url("file:///C|/Users/bryan/Pictures/mercurio/pizza10.png");
-  background-size: cover;
-}
