@@ -1,206 +1,176 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" href="css/fontAwesome.css">
+<link rel="stylesheet" href="css/font.css">
 <link rel="stylesheet" href="proyectu.css">
 
 <title></title>
 
-</head>
 
-<body>
+<script
+      src="https://kit.fontawesome.com/2e559cd7fe.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
+  <body>
+    <div class="menu">
+      <span class="tabi">eatlify</span>
+      <span class="space"></span>
+      <span class="tab">home</span>
+      <span class="tab">
+        <a href="/productos.html">Productos</a>
+      </span>
+      <span class="tab">Aboust us</span>
+      <span class="tab">Faeatures</span>
+      <span class="tab">contacts</span>
+    </div>
 
-<div class="menu">
-    
-  <span class="tabi" onclick="openTab(event, 1)">eatlify</span>
-  <span class="tab" onclick="openTab(event, 1)">home</span>
-  <span class="tab" onclick="openTab(event, 1)">Aboust us</span>
-    <span class="tab" onclick="openTab(event, 2)">Faeatures</span>
-    <span class="tab" onclick="openTab(event, 3)">menu</span>
-    <span class="tab" onclick="openTab(event, 4)">contacts</span>
-</div>
+    <div class="tubody">
+      <div class="contenlo">
+        <div class="contenedor-uno">
+          <div class="contenedor-dos">
+            <div class="pompa1"></div>
+          </div>
+          <div class="conte">
+            <div class="pizza"><p class="texto">Pizza familiar</p></div>
+          </div>
+          <i class="fas fa-store"></i>
+          <div class="clase"><p>eatlify</p></div>
+          <div class="eat">
+            <i class="fas fa-history"></i>
 
+            <i class="fas fa-store"></i>
 
-<div class="tubody">
-  
+            <i class="fas fa-truck"></i>
+          </div>
+        </div>
 
+        <div class="contenedorbur">
+          <div class="conte"></div>
+          <div class="contenedor-dos">
+            <div class="pompa12"></div>
+          </div>
+        </div>
+      </div>
 
+      <div class="rubi">
+        <div class="linea">
+          <div class="lineados">
+            <div class="liquido"></div>
+          </div>
+          <div class="conodo"></div>
+        </div>
 
+        <div class="tesoro">
+          <div class="tesorodos">
+            <div class="buruno"></div>
+          </div>
+          <div class="contetodo"></div>
+        </div>
 
-<div class="contenlo">
-  
-    
-    
-     
+        <div class="caja">
+          <div class="cajados">
+            <div class="burdos"></div>
+          </div>
+          <div class="contetodos"></div>
+        </div>
+      </div>
+    </div>
 
+    <div class="caja-img">
+      <p>Many categories to choose from</p>
+      <div class="item1"><p>Pizza de jamon</p></div>
+      <div class="item2"><p>Ensaladas</p></div>
+      <div class="item3"><p>Pastas</p></div>
+      <div class="item4"><p>Hamburgueza</p></div>
+      <div class="item5"><p>Bebidas</p></div>
+      <div class="item6"><p>Postres</p></div>
+      <div class="item7"><p>Mariscos</p></div>
+      <div class="item8"><p>Carnes</p></div>
+      <div class="item9"><p>Sopas</p></div>
+      <div class="item10"><p>Pastelillos</p></div>
+    </div>
 
+    <div class="clasi">
+      <p>How to order?</p>
 
+      <div class="redo">
+        <i class="fas fa-laptop"></i>
+        <p>choose your location</p>
+      </div>
 
+      <div class="redo">
+        <i class="fas fa-utensils"></i>
+        <p>choose restauran</p>
+      </div>
 
+      <div class="redo">
+        <i class="fas fa-pizza-slice"></i>
+        <p>make your order</p>
+      </div>
 
-<div class="contenedor-uno">
-  <div class="contenedor-dos">
-    <div class="pompa1"> </div>
-  </div>
- <div class="conte"><div class="pizza"><p class="la">Pizza familiar</p></div></div>
- <div class="clase"><p>eatlify</p></div>
- <div class="eat">
+      <div class="redo">
+        <i class="fas fa-truck"></i>
+        <p>food is on the way</p>
+      </div>
+    </div>
+
+    <div class="popular"></div>
+
+    <h4>hola</h4>
+    <h4>hola</h4>
+    <h4>hola</h4>
+    <h4>hola</h4>
+    <h4>hola</h4>
+    <h4>hola</h4>
+    <h4>hola</h4>
+    <h4>hola</h4>
+    <h4>hola</h4>
+    <h4>hola</h4>
+    <h4>hola</h4>
+    <h4>hola</h4>
+    <h4>hola</h4>
+    <h4>hola</h4>
+    <h4>hola</h4>
+    <h4>hola</h4>
+    <h4>hola</h4>
+    <h4>hola</h4>
+    <h4>hola</h4>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+  <script>
+    let logoTag = document.querySelector(".tabi");
+    let texto = logoTag.innerHTML;
+
+    logoTag.innerHTML = "";
+    let arregloTexto = texto.split("");
+
+    let cadaLetra;
+    for (let i = 0; i < arregloTexto.length; i++) {
+      cadaLetra = document.createElement("p");
+      cadaLetra.innerHTML = arregloTexto[i];
+      cadaLetra.classList.add("cada-letra");
+
+      document.querySelector(".tabi").appendChild(cadaLetra);
+    }
+
+    let animarLogo = anime.timeline({
+      easing: "easeOutBack",
+      duration: 1000,
+    });
+
+    animarLogo .add({
+      targets:".tab",
+      opacity:[0,1],
+      rotate:[45,0],
    
-
-<i class="fas fa-history"></i>   
-
-<i class="fas fa-store"></i>
-
-<i class="fas fa-truck"></i>
-
-
- </div>
-</div>  
-
-
-<div class="contenedorbur">
-  <div class="conte"></div>
-  <div class="contenedor-dos">
-    <div class="pompa12"> </div>
-  </div>
-  
- 
-</div>  
-</div>
-
-<div class="rubi">          
-
-
-
-<div class="linea">
-  <div class="lineados">
-    <div class="liquido"></div>    
-  </div>
-  <div class="conodo"></div>
-</div>     
-     
-
-
-
-
-<div class="tesoro">
-  <div class="tesorodos">
-    <div class="buruno"></div>
-  </div>
-  <div class="contetodo"></div>
-
-  </div>     
-
-
-<div class="caja">
-  <div class="cajados">
-    <div class="burdos"></div>   
-
-  </div>
-<div class="contetodos"></div> 
-</div> 
-
-</div>
-</div>
-     
-
-
-
-
-
-
-
-
-
-<div class="leon">
-  
-<p>Many categories to choose from</p>
-<div class="item1">1</div>
-<div class="item2">2</div>
-<div class="item3">3</div>
-<div class="item4">4</div>
-<div class="item5">5</div>
-<div class="item6">6</div>
-<div class="item7">7</div>
-<div class="item8">8</div>
-<div class="item9">9</div>
-<div class="item10">10</div>
-
-
-
-
-
-
-</div>  
-
-
-
-
-
-
-
-<div class="clasi">
-
-
-  <p>How to order?</p>
-   
-<div class="redo"><i class="fas fa-laptop"></i><p>choose your location</p></div> 
-
-<div class="redo"><i class="fas fa-utensils"></i><p>choose restauran</p></div>
-
-<div class="redo"><i class="fas fa-pizza-slice"></i><p>make your order</p></div>
-
-<div class="redo"><i class="fas fa-truck"></i><p>food is on the way</p></div>
-
-
-
-
-
-  
-   
-</div> 
-
-
-
-
-
-<div class="popular">
-
-</div>
-
-
-
-<h4>hola</h4>
-<h4>hola</h4>
-<h4>hola</h4>
-<h4>hola</h4>
-<h4>hola</h4>
-<h4>hola</h4>
-<h4>hola</h4>
-<h4>hola</h4>
-<h4>hola</h4>
-<h4>hola</h4>
-<h4>hola</h4>
-<h4>hola</h4>
-<h4>hola</h4>
-<h4>hola</h4>
-<h4>hola</h4>
-<h4>hola</h4>
-<h4>hola</h4>
-<h4>hola</h4>
-<h4>hola</h4>
-
-</body>
-
-<script>
-  
-
-
-
-</script>
-
+  delay: anime.stagger(100),
+    }).add({
+      targets: ".cada-letra",
+      opacity:['0','1'],
+      direction: 'alternate',   
+      delay: anime.stagger(100),
+    })
+  </script>
 </html>
-
-
-
