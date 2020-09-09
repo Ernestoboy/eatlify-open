@@ -185,6 +185,24 @@
         document.querySelector(".tabi").appendChild(cadaLetra);
       }
 
+      let animarCategorias = anime.timeline({
+          easing:"easeOutBack",
+          duration:500
+      });
+
+      animarCategorias
+
+      .add({
+            targets:".catSliderContainer .item",
+            opacity:['0','1'],
+            translateY:['100px','0'],
+            translateX:['-300px','0'],
+            scale:['5','1'],
+            rotate:['90','0'],
+            easing: 'easeInOutSine',
+            delay: anime.stagger(10)
+        })
+
       let animarLogo = anime.timeline({
         easing: "easeOutBack",
         duration: 1000,
@@ -203,14 +221,7 @@
           scale: ["3", "1"],  
           delay: anime.stagger(50),
         })        
-        .add({
-            targets:".catSliderContainer .item",
-            opacity:['0','1'],
-            translateY:['100px','0'],
-            rotate:['45','0'],
-            easing: 'easeInOutSine',
-            delay: anime.stagger(10)
-        })
+       
     </script>
 
 </body>
