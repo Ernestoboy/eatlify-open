@@ -1,0 +1,59 @@
+
+
+.menu {
+    position: sticky;
+    top: 0%;
+    height: 5.85vw;
+    background: $color-primario;
+    background-image: $degradado;
+    /* background-image: linear-gradient( 135deg, #FEC163 10%, #DE4313 100%); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0vw solid #f58000;
+    padding: 0 3%;
+    z-index: 20000;
+    box-shadow: $sombra;
+  
+    .tab {
+      position: relative;
+      margin-left: 3.5vw;
+      font-size: 3.5vw;
+      font-family: Gabriola;
+      color: white;
+      text-shadow: 0px 0px 10px gold;
+      cursor: pointer;
+      transition: all .4s ease;
+      &:hover{
+      text-shadow: 2px 3px 10px gold;
+      color: $color-primario;
+
+      }
+    }
+  
+    .space{
+      flex: 1;
+    }
+  
+    .tabi  {
+      position: relative;
+      display: block;
+    left:0vw;
+    font-size: 5vw;
+    font-family: Gabriola;
+    color:white;
+    padding:0%; 
+    margin:0%;
+    text-shadow: 0px 0px 7px rgb(214, 183, 9);
+
+    .cada-letra{
+        display: inline;
+    }
+    }
+
+
+    
+  
+   
+  }
+  

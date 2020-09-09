@@ -33,7 +33,7 @@ overflow: hidden;
         height: 55vh;
         
         
-        background:; 
+        
 
 
 }
@@ -190,7 +190,6 @@ width: 100%;
 height: 5.85vw;
 
 background:var(--tan);
-opacity: ; 
 display: flex;justify-content: center;
 align-items: center;
 border-bottom: 0vw solid #F58000;
