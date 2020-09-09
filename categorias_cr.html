@@ -322,5 +322,28 @@
        
     </script>
 
+    <!-- slider js puro -->
+    <script>
+        const contenedorCategorias = document.querySelector(".catSliderContainer");
+
+function deslizeIzquierda() {
+
+  if (screen.width <= 500){
+    contenedorCategorias.scrollLeft -= 500;      
+  } else {
+    contenedorCategorias.scrollLeft -= 1000;      
+  }
+}
+
+function deslizeDerecha() {
+
+  if (screen.width <= 500){
+    contenedorCategorias.scrollLeft += 500;      
+  } else {
+    contenedorCategorias.scrollLeft += 1000;      
+  }
+}
+    </script>
+
 </body>
 </html>
