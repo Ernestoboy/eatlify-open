@@ -39,8 +39,8 @@ a:link {
   border-bottom: 0px solid #f58000;
   padding: 0 3%;
   z-index: 20000;
-  -webkit-box-shadow: 0px 0px 35px 25px orange inset;
-          box-shadow: 0px 0px 35px 25px orange inset;
+  -webkit-box-shadow: 0px 0px 30px 15px orange inset;
+          box-shadow: 0px 0px 30px 15px orange inset;
   border-bottom: 3px solid orange;
 }
 
@@ -97,13 +97,13 @@ a:link {
 .catSliderContainer {
   display: -ms-grid;
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 1.7vw;
   grid-auto-flow: column;
   overflow-y: hidden;
-  max-height: 150px;
+  max-height: 11vw;
   overflow-x: auto;
   scroll-behavior: smooth;
-  padding: 20px;
+  padding: 0.6vw;
   border-bottom: 3px solid gold;
 }
 
@@ -113,8 +113,8 @@ a:link {
 
 .catSliderContainer .item {
   position: relative;
-  width: 9vw;
-  height: 9vw;
+  width: 9.2vw;
+  height: 9.2vw;
   margin: 0vw 2vw 0vw 2vw;
   border-radius: 50%;
   display: -webkit-box;
@@ -139,11 +139,11 @@ a:link {
   border-right: 2px solid var(--back);
   padding-left: 1.3vw;
   padding-right: 1.3vw;
-  width: 134px;
   padding-top: 1.2vw;
   border-radius: 20vw;
   -webkit-box-shadow: 0px 0px 1px 3px gold inset;
   box-shadow: 0px 0px 1px 3px gold inset;
+  font-size: 1.3vw;
   font-weight: 1000;
   text-align: center;
 }
@@ -182,6 +182,26 @@ a:link {
 
 .flecha-izquierda:active, .flecha-derecha:active {
   border: 3.5px solid white;
+}
+
+@media screen and (max-width: 480px) {
+  .flecha-izquierda {
+    -webkit-box-shadow: 0px 0px 1px 3.5px aqua inset;
+            box-shadow: 0px 0px 1px 3.5px aqua inset;
+  }
+  .catSliderContainer {
+    padding: 15vw;
+    grid-gap: 8vw;
+  }
+  .catSliderContainer .item {
+    width: 27vw;
+    height: 27vw;
+    top: -12vw;
+  }
+  .catSliderContainer .item p {
+    font-size: 4vw;
+    padding: 2vw 5vw 2vw 5vw;
+  }
 }
 
 .products-container {

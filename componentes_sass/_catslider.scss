@@ -1,13 +1,14 @@
 .catSliderContainer {
-    display: -ms-grid;
-    display: grid;
-    grid-gap: 10px;
-    grid-auto-flow: column;
+  
+  display:-ms-grid;
+  display: grid;
+  grid-gap: 1.7vw;
+  grid-auto-flow: column;
     overflow-y: hidden;
-    max-height: 150px;
+    max-height: 11vw;
     overflow-x: auto;
     scroll-behavior: smooth;
-    padding: 20px;
+    padding: 0.6vw;
     border-bottom: 3px solid gold;
   }
 
@@ -17,8 +18,8 @@
   
   .catSliderContainer .item {
     position: relative;
-    width: 9vw;
-    height: 9vw;
+    width: 9.2vw;
+    height:9.2vw;
     margin: 0vw 2vw 0vw 2vw;
     border-radius: 50%;
     display: -webkit-box;
@@ -43,12 +44,12 @@
     border-right: 2px solid var(--back);
     padding-left: 1.3vw;
     padding-right: 1.3vw;
-    width: 134px;
     padding-top: 1.2vw;
     border-radius: 20vw;
     -webkit-box-shadow: 0px 0px 1px 3px gold inset;
             box-shadow: 0px 0px 1px 3px gold inset;
-    font-weight: 1000;
+            font-size:1.3vw;
+            font-weight: 1000;
     text-align: center;
   }
   
@@ -65,6 +66,13 @@
     border:3.5px solid gold ;
     box-shadow: 0px 0px 1px 3.5px white inset;
     cursor:pointer;
+
+
+
+
+
+
+
   }
   
   .flecha-derecha {
@@ -93,3 +101,20 @@
   
   }
   
+  
+
+
+
+  @media screen and (max-width:480px) {
+    .flecha-izquierda
+    { box-shadow: 0px 0px 1px 3.5px aqua inset;}
+
+
+    .catSliderContainer{ 
+                      padding:15vw ;
+                      grid-gap: 8vw;
+                   
+                      .item { width: 27vw; height: 27vw ; top: -12vw ;}
+                          .item  p {font-size: 4vw ; padding : 2vw 5vw 2vw 5vw ; }         
+                          }      
+    }
