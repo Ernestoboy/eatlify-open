@@ -15,7 +15,7 @@
 
   <body>
 
-    <div class="menu">
+    <div class="menu" >
       <span class="tabi">eatlify</span>
       <span class="space"></span>
       <span class="tab">home</span>
@@ -79,8 +79,11 @@
       </div>
     </div>
 
+
+
     <div class="caja-img">
-      <p>Many categories to choose from</p>
+      
+<p>Many categories to choose from</p>
       <div class="item1"><p>Pizza de jamon</p></div>
       <div class="item2"><p>Ensaladas</p></div>
       <div class="item3"><p>Pastas</p></div>
@@ -173,5 +176,28 @@
       direction: 'alternate',   
       delay: anime.stagger(100),
     })
+  
+
+    <!-- slider js puro -->
+    
+    const contenedorCategorias = document.querySelector(".menu");
+
+function deslizeIzquierda() {
+
+  if (screen.width <= 500){
+    contenedorCategorias.scrollLeft -= 500;      
+  } else {
+    contenedorCategorias.scrollLeft -= 1000;      
+  }
+}
+
+function deslizeDerecha() {
+
+  if (screen.width <= 500){
+    contenedorCategorias.scrollLeft += 500;      
+  } else {
+    contenedorCategorias.scrollLeft += 1000;      
+  }
+}
   </script>
 </html>
